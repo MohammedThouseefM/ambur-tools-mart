@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ATM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about.html">About </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/hardwaresprod.html">Hardwares</a></li>
+                            <li><a class="dropdown-item" href="/electronics.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="/jsw.html">JSW paints</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+
+                <div class="ms-2">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Log in</button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign up</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col">
+                            <label for="first">Enter First Name</label>
+                            <input type="text" class="form-control" id="first" placeholder="First name"
+                                aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="last">Enter Last Name</label>
+                            <input type="text" class="form-control" id="last" placeholder="Last name"
+                                aria-label="Last name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing ">
+        <div class="col-lg-4 m-auto my-5 align-self-center flex-column text-center w-75">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/photos/logo.png" alt="">
+            <h2 class="fw-normal">About Us</h2>
+            <p>At Ambur Tools Mart, we offer a wide range of durable and reliable hardware tools for every project. From
+                power tools to hand tools, our products are designed to help professionals and DIY enthusiasts tackle
+                tasks with precision and efficiency. Trust us to provide the right tools for your needs, ensuring
+                quality and performance every time.</p>
+
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette  ">
+            <div class="col-md-7 align-self-center">
+                <h2 class="featurette-heading fw-normal lh-1 ">About Us<span class="text-body-secondary"> pure
+                        quality</span></h2>
+                <p class="lead">Welcome to (ATM) Ambur Tools Mart, your trusted partner for all your hardware,
+                    electronics, and premium paint needs. With years of experience in the industry, we take pride in
+                    offering top-quality products and exceptional service to our valued customers.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                    height="400" src="/about/IMG_20210903_160445.jpg" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider my-5">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 align-self-center">
+                <h2 class="featurette-heading fw-normal lh-1">Who We Are <span class="text-body-secondary">See for
+                        yourself.</span></h2>
+                <p class="lead">At (ATM) Ambur Tools Mart, we are more than just a supplier – we are your go-to
+                    destination for reliable hardware tools, cutting-edge electronics, and the finest JSW paints.
+                    Whether you're a professional contractor, a DIY enthusiast, or a homeowner looking to transform your
+                    space, we have everything you need to get the job done righ
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                    height="400" src="/about/whoweare.jpeg" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5 ">
+            <div class="col-md-7 align-self-center">
+                <h2 class="featurette-heading fw-normal lh-1">Our Mission<span
+                        class="text-body-secondary">Checkmate.</span></h2>
+                <p class="lead">Our mission is simple: to provide high-quality products that empower our customers to
+                    build, create, and innovate. We believe in delivering not just products, but solutions that make
+                    your projects easier, faster, and more efficient.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                    height="400" src="/about/misiion.jpeg" alt="">
+            </div>
+        </div>
+        <div class="container marketing ">
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 align-self-center">
+                    <h2 class="featurette-heading fw-normal lh-1">What We Offer <span class="text-body-secondary">See
+                            for
+                            yourself.</span></h2>
+                    <p class="lead">Hardware Tools: From power tools to hand tools, we stock a wide range of durable and
+                        reliable equipment for every task. <br>
+                        Electronics: Explore our selection of electronics, including wiring, switches, sensors, and
+                        more, designed to meet your technical needs. <br>
+                        JSW Paints: As an authorized dealer of JSW paints, we bring you a stunning range of colors and
+                        finishes for both interior and exterior applications. Whether you're painting a home, office, or
+                        industrial space, our paints combine quality, durability, and beauty.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="400" src="/about/whatweofer.png" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette my-5 align-self-center ">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Why Choose Us?<span
+                            class="text-body-secondary">Checkmate.</span></h2>
+                    <p class="lead">- Quality Assurance: We source our products from trusted brands and manufacturers to
+                        ensure you get the best every time. <br>
+                        Expert Advice: Our team of knowledgeable professionals is always ready to assist you with
+                        product recommendations and expert guidance. <br>
+                        Customer-Centric Approach: Your satisfaction is our priority. We strive to build long-term
+                        relationships by offering personalized service and support. <br>
+                        Competitive Pricing: Enjoy great value for your money with our affordable prices and regular
+                        promotions.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="400" src="/about/whyus.jpg" alt="">
+                </div>
+            </div>
+</body>
+
+</html>
